@@ -1,4 +1,4 @@
-# Klika Admin Dashboard (klika-admin)
+# Notes App (notes-app)
 
 
 #### Tech Stack
@@ -8,7 +8,7 @@
 #### How to setup
 ``` bash
 # clone
-$ git clone https://github.com/Klika-Tech-Team/klika-admin.git
+$ git clone https://github.com/amsanchez0513/Notes-App---Frontend.git
 
 # install dependencies
 $ npm install
@@ -17,7 +17,7 @@ $ npm install
 #### How to Deploy
 ``` bash
 
-# serve with hot reload at localhost:5173
+# serve with hot reload at localhost:5174
 $ npm run dev
 
 # build for production with minification
@@ -46,3 +46,4 @@ $ quasar lint
     - For all tests: `npm test`
     - It is a good idea to follow TDD.
     `npm run tdd` will watch your files and run tests to continuously report failing tests.
+
