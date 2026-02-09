@@ -20,16 +20,20 @@ async function saveNote() {
     })
     const response_message = get(response, 'metadata.message', '');
     emit('update_notify', {
-            message: response_message,
-            type: 'success',
-        });
+        message: response_message,
+        type: 'success',
+    });
+
+    newNote.value = "";
+    await loadNotes();
 }
-onMounted(async() => {
+
+async function loadNotes() {
     const res = await $notes.get_notes();
-    console.log(res);
     notes.value = res.data.items;
-    console.log(notes.value);
-});
+}
+
+onMounted(loadNotes);
 </script>
 
 <template>
@@ -63,7 +67,7 @@ onMounted(async() => {
             block
             @click="saveNote"
         >
-            Add Note
+            Save Note
         </v-btn>
     </div>
 </template>
