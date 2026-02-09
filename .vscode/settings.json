@@ -1,0 +1,48 @@
+{
+    "debug.showBreakpointsInOverviewRuler": true,
+    "diffEditor.ignoreTrimWhitespace": true,
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ],
+    "eslint.run": "onSave",
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+    "editor.detectIndentation": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.formatOnPaste": true,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit",
+        "source.fixAll": "explicit"
+    },
+    "editor.rulers": [
+        {
+            "column": 100,
+            "color": "#ffff00"
+        },
+    ],
+    "eslint.format.enable": true,
+    "eslint.workingDirectories": [
+        {
+            "mode": "auto"
+        }
+    ],
+    "files.trimTrailingWhitespace": true,
+    "files.eol": "\n",
+    "files.autoSave": "onWindowChange",
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+        "editor.matchBrackets": "always"
+    },
+    "[vue]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    },
+    "typescript.disableAutomaticTypeAcquisition": true
+}

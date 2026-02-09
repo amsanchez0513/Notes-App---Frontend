@@ -1,0 +1,15 @@
+'use strict';
+
+import moment from 'moment';
+import dateConfig from 'src/config/date';
+
+// Date validator with strict formatting rule to prevent falling back to js Date validation
+// which is not reliable accross browsers
+// https://momentjs.com/guides/#/warnings/js-date/
+export const is_valid_strict_date_format = (value) => {
+    if (!value) {
+        return false;
+    }
+
+    return moment(value, dateConfig.formats.ISO_DATE, true).isValid();
+};

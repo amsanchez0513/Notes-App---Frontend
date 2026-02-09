@@ -1,0 +1,35 @@
+<script setup lang="ts">
+import Logo from '@/layouts/full/logo/Logo.vue';
+/*form component*/
+import TwoStepForm from '@/components/auth/TwoStepForm.vue'
+</script>
+<template>
+    <div class="authentication">
+        <v-container fluid class="pa-3">
+            <v-row class="h-100vh d-flex justify-center align-center">
+                <v-col cols="12" lg="4" xl="5" class="d-flex align-center">
+                    <div class="boxed-auth-wrap">
+                        <v-card  elevation="10" class="px-sm-1 px-0  mx-auto index-2" max-width="455">
+                            <v-card-item class="pa-sm-8">
+                                <div class="d-flex justify-center ">
+                                    <Logo />
+                                </div>
+                                <p
+                                    class="text-subtitle-1 text-grey100 text-center mt-2 text-13"
+                                    v-text="`${$t(`sent_verification_to_mobile`) + $t(`enter_the_code_below`)}`"
+                                />
+                                <h6
+                                    class="text-subtitle-1 font-weight-medium mt-3 text-center"
+                                >
+                                    <!-- note: change to users number -->
+                                    ******1234
+                                </h6>
+                                <!---Form---->
+                                <TwoStepForm />
+                            </v-card-item>
+                        </v-card>
+                    </div>
+                </v-col>
+            </v-row>
+        </v-container>
+    </div></template>
